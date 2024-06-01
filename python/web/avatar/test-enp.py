@@ -1,7 +1,7 @@
 import requests
 
-url = "https://southeastasia.tts.speech.microsoft.com/cognitiveservices/avatar/relay/token/v1"
-subscription_key = "9e841eaeb7974f339115f2e873f2ace7"
+url = "https://southeastasia.tts.speech.microsoft.com/cognitiveservices/avatar/relay/token/v1"#replace southeastasia whith your Speech resouce region
+subscription_key = "Key_of_speech_resource"
 
 headers = {
     "Ocp-Apim-Subscription-Key": subscription_key
