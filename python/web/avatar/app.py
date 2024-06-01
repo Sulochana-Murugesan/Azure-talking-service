@@ -21,22 +21,22 @@ app = Flask(__name__, template_folder='.')
 
 # Environment variables
 # Speech resource (required)
-speech_region = "southeastasia" # e.g. westus2
-speech_key ="9e841eaeb7974f339115f2e873f2ace7"
-speech_private_endpoint = "https://southeastasia.api.cognitive.microsoft.com/" # e.g. https://my-speech-service.cognitiveservices.azure.com/ (optional)
+speech_region = "Region_of_Seepch-service" # e.g. westus2
+speech_key ="Key_of_Seepch-service"
+speech_private_endpoint = "Endpoint_of_Seepch-service" # e.g. https://my-speech-service.cognitiveservices.azure.com/ (optional)
 # OpenAI resource (required for chat scenario)
-azure_openai_endpoint ="https://chat-demo-east-us.openai.azure.com/"  # e.g. https://my-aoai.openai.azure.com/
-azure_openai_api_key = 'a75171ca34cc45aeb4bfe92375a96adf'
-azure_openai_deployment_name = "chat" # e.g. my-gpt-35-turbo-deployment
+azure_openai_endpoint ="Endpoint_of_Open_AI"  # e.g. https://my-aoai.openai.azure.com/
+azure_openai_api_key = 'Key_of_Open_AI'
+azure_openai_deployment_name = "Service Name" # e.g. my-gpt-35-turbo-deployment
 # Cognitive search resource (optional, only required for 'on your data' scenario)
 cognitive_search_endpoint = os.environ.get('COGNITIVE_SEARCH_ENDPOINT') # e.g. https://my-cognitive-search.search.windows.net/
 cognitive_search_api_key = os.environ.get('COGNITIVE_SEARCH_API_KEY')
 cognitive_search_index_name = os.environ.get('COGNITIVE_SEARCH_INDEX_NAME') # e.g. my-search-index
 # Customized ICE server (optional, only required for customized ICE server)
-ice_server_url = 'turn:relay.communication.microsoft.com:3478' # The ICE URL, e.g. turn:x.x.x.x:3478
-ice_server_url_remote ="turn:relay.communication.microsoft.com:3478"  # The ICE URL for remote side, e.g. turn:x.x.x.x:3478. This is only required when the ICE address for remote side is different from local side.
-ice_server_username = 'BQAANjshuQAB2rl8COea90ALJ45nZYpu+3dVGiRr8SEAAAAQAxBVtNG++9hPVpVUeZeAeeEay9cu5PUIoLHy2HskaPqfo/8O75o=' # The ICE username
-ice_server_password = 'KwFXb7RaQTkNTUfYKRA6Z3DDlEM=' # The ICE password
+ice_server_url = 'ICE_Url' # The ICE URL, e.g. turn:x.x.x.x:3478
+ice_server_url_remote ="ICE_Url"#optional  # The ICE URL for remote side, e.g. turn:x.x.x.x:3478. This is only required when the ICE address for remote side is different from local side.
+ice_server_username = 'ICE_username' # The ICE username
+ice_server_password = 'ICE_password' # The ICE password
 
 # Const variables
 default_tts_voice = 'en-US-JennyMultilingualV2Neural' # Default TTS voice
